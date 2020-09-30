@@ -1,0 +1,31 @@
+@import '../vars'
+
+
+header
+  background-color: $c-header
+  height: $headerHeight
+  color: $c-alternateText
+  box-shadow: 0 1px 12px rgba(48, 51, 61, 0.18)
+
+.header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 100%
+  max-width: 1320px
+  margin: 0 auto
+  height: 100%
+  padding: 0 15px
+
+  .user
+    display: flex
+    align-items: center
+    .user__name
+      margin-right: 16px
+    .user__logo
+      width: 40px
+      height: 40px
+      object-fit: cover
+      object-position: center
+      border-radius: 50%
+

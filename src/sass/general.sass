@@ -1,0 +1,36 @@
+@import 'vars.sass'
+
+body
+  display: flex
+  flex-flow: column
+  font-family: 'IBM Plex Sans', sans-serif
+  color: $c-baseText
+  font-size: $baseFontSize
+  font-weight: 400
+  margin: 0
+  line-height: 1.4
+  overflow-x: hidden
+  box-sizing: border-box
+  background-color: $c-body
+  min-height: 100vh
+  &.modal
+    overflow: hidden
+    margin-right: 16px
+
+*
+  box-sizing: inherit
+
+div, ul
+  box-sizing: border-box
+
+ul
+  list-style-type: none
+  padding: 0
+  margin: 0
+
+a
+  text-decoration: none
+  color: white
+
+
+
