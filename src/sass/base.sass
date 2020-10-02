@@ -4,10 +4,6 @@
   display: flex
   flex-flow: column
   flex: 1
-  width: 100%
-  max-width: 1320px
-  margin: 0 auto
-  padding: 0 15px
 
 .column
   display: flex
@@ -16,3 +12,15 @@
 .row
   display: flex
   align-items: center
+
+.container
+  width: 100%
+  max-width: 1350px
+  margin: 0 auto
+  padding: 0 30px
+  @media (max-width: $m)
+    padding: 0 24px
+  @media (max-width: $s)
+    padding: 0 18px
+  @media (max-width: $xs)
+    padding: 0 15px

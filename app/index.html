@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, maximum-scale=3, initial-scale=1">
@@ -10,7 +11,7 @@
   </head>
   <body>
     <header>
-      <div class="header">
+      <div class="header container">
         <div class="column">
         <span class="logo">
           <img src="img/logo.svg" alt="Physical Transformation" />
@@ -23,12 +24,12 @@
         </div>
       </div>
     </header>
-    <div class="body">
+    <div class="body container">
       <div class="content">
         <h1 class="page__title">Стартовая анкета</h1>
         <p>Заполни свою стартовую анкету.</p>
         <p>Отнесись внимательно к заполнению данных, на их основе команда выдаст тебе твою первую планку.</p>
-        <a href="/" class="link__next">
+        <a href="/form-done.html" class="link__next">
           Заполнить анкету
           <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6917 6.7434C17.1028 6.33283 17.1028 5.66717 16.6917 5.2566L11.4285 0L9.93989 1.48679L13.4061 4.94868L0 4.94868V7.05132L13.4061 7.05132L9.93989 10.5132L11.4285 12L16.6917 6.7434Z" fill="white"/>
@@ -36,13 +37,20 @@
         </a>
       </div>
     </div>
+    
     <footer>
-      <div class="footer">
-        <span>Все права защищены.</span>
-        <span>По всем вопросам <a href="mailto:email@fiziki.com">email@fiziki.com</a></span>
-        <button class="button__transparent">
-          <img src="img/icons/exit.svg" alt="exit" />Выйти
-        </button>
+      <div class="container">
+        <div class="footer">
+          <span>Все права защищены.</span>
+          <span>По всем вопросам <a href="mailto:email@fiziki.com" class="link__base">email@fiziki.com</a></span>
+          <button class="button__transparent">
+            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.5C0 2.73858 2.23858 0.5 5 0.5H12C12.5523 0.5 13 0.947715 13 1.5C13 2.05228 12.5523 2.5 12 2.5H5C3.34315 2.5 2 3.84315 2 5.5V15.5C2 17.1569 3.34315 18.5 5 18.5H12C12.5523 18.5 13 18.9477 13 19.5C13 20.0523 12.5523 20.5 12 20.5H5C2.23858 20.5 0 18.2614 0 15.5V5.5Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M19.6917 9.76316C20.1028 10.1742 20.1028 10.8407 19.6917 11.2518L14.4285 16.515L12.9399 15.0263L16.4061 11.5601L8 11.5601L8 9.45485L16.4061 9.45485L12.9399 5.98865L14.4285 4.5L19.6917 9.76316Z" />
+            </svg>
+            Выйти
+          </button>
+        </div>
       </div>
     </footer>
     <script src="../../js/app.js"></script>

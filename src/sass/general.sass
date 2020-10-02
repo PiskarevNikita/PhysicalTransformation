@@ -4,7 +4,7 @@ body
   display: flex
   flex-flow: column
   font-family: 'IBM Plex Sans', sans-serif
-  color: $c-baseText
+  color: $c-textBase
   font-size: $baseFontSize
   font-weight: 400
   margin: 0
@@ -16,6 +16,9 @@ body
   &.modal
     overflow: hidden
     margin-right: 16px
+  &.not-found
+    background-color: $c-body404
+    color: $c-textAlternate
 
 *
   box-sizing: inherit
