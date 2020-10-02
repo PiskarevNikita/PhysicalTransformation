@@ -100,6 +100,10 @@ a {
     .container {
       padding: 0 15px; } }
 
+button {
+  outline: none;
+  cursor: pointer; }
+
 header {
   position: relative;
   background-color: #fff;
@@ -185,8 +189,7 @@ footer {
   background: none;
   color: #8494F1;
   font-size: 14px;
-  font-weight: 600;
-  outline: none; }
+  font-weight: 600; }
   .button__transparent img, .button__transparent svg {
     margin-right: 8px;
     fill: #8494F1; }
