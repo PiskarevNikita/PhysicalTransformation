@@ -272,6 +272,9 @@ footer {
   .link__next svg {
     margin-left: 8px; }
 
+.not-found .body {
+  overflow: hidden; }
+
 .not-found .header .user .user__name {
   -ms-flex-order: 1;
   order: 1;
