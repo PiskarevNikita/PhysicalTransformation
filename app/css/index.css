@@ -154,7 +154,7 @@ header {
       margin: 0 8px 1px 0; }
 
 @media (max-width: 768px) {
-  .header .header__right {
+  .header .user__name {
     display: none; } }
 
 footer {
@@ -324,6 +324,8 @@ footer {
     fill: #2B50ED; }
 
 @media (max-width: 768px) {
+  .not-found .header__right {
+    display: none; }
   .not-found .row {
     -ms-flex-flow: column;
     flex-flow: column; }
