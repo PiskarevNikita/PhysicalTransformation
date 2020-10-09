@@ -272,9 +272,6 @@ footer {
   .link__next svg {
     margin-left: 8px; }
 
-.not-found .body {
-  overflow: hidden; }
-
 .not-found .header .user .user__name {
   -ms-flex-order: 1;
   order: 1;
@@ -311,7 +308,7 @@ footer {
     object-fit: cover;
     -o-object-position: center;
     object-position: center;
-    margin-left: -28vh; }
+    margin-left: -30vh; }
 
 .not-found .footer {
   border-top-color: #E0E8F6;
