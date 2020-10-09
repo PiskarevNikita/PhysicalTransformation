@@ -44,12 +44,12 @@ function fonts() {
     .pipe(browserSync.stream())
 }
 
-// function mobileStyles() {
-//   return gulp.src('./src/sass/mobile.sass')
-//     .pipe(sass())
-//     .pipe(gulp.dest('./app/css'))
-//     .pipe(browserSync.stream())
-// }
+function mobileStyle() {
+  return gulp.src('./src/sass/mobile.sass')
+    .pipe(sass())
+    .pipe(gulp.dest('./app/css'))
+    .pipe(browserSync.stream())
+}
 
 function watch() {
   browserSync.init({
@@ -69,7 +69,7 @@ gulp.task('clean', function() {
 });
 
 exports.style = style;
-// exports.mobileStyles = mobileStyles;
+exports.mobileStyle = mobileStyle;
 exports.html = html;
 exports.js = js;
 exports.img = img;
