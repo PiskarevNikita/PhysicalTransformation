@@ -1,9 +1,10 @@
+@import '../vars'
 
 .content
   display: flex
   flex-flow: column
   align-items: flex-start
-  padding: 100px 0 20px
+  padding: 100px 0 160px
   width: 100%
   max-width: 850px
   margin: 0 auto
@@ -24,3 +25,11 @@
   font-size: 40px
   line-height: 52px
   margin: 0 0 17px
+
+@media (max-width: $s-min)
+  .content
+    padding-bottom: 80px
+    p
+      font-size: 16px
+    .link__next
+      margin: 40px auto 0

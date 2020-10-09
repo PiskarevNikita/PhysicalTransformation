@@ -2,20 +2,32 @@
 
 
 .not-found
+  .header
+    .user
+      .user__name
+        order: 1
+        margin: 0 0 0 16px
+        color:
   .row
     position: relative
+    flex: 1
   .content
     margin: 0
-    width: 60%
-  p
-    color: $c-textSecond
-    max-width: 630px
+    width: calc(100% - 400px)
+    padding-right: 20px
+    .page__title
+      font-size: 40px
+      line-height: 52px
+    p
+      color: $c-textSecond
+      max-width: 630px
+      line-height: 26px
   .not-found__image
     position: absolute
     top: 0
-    left: 70%
+    left: calc(100% - 400px)
     max-width: 835px
-    height: calc(100vh - #{$heightHeader} - #{$heightFooter})
+    height: 100%
     max-height: 910px
     overflow: hidden
     img
@@ -29,36 +41,52 @@
     color: $c-textOpacity
     .link__base
       color: $c-textBlue
+    .footer__mail
+      max-width: 254px
   .button__transparent
     color: $c-textBlue
     svg
       fill: $c-textBlue
 
 
-@media (max-width: $xl)
-  .not-found
-    .not-found__image
-      left: 60%
-
 @media (max-width: $m)
   .not-found
     .row
       flex-flow: column
+    .content
+      width: 100%
+      padding-bottom: 40px
     .not-found__image
       position: static
       display: flex
       justify-content: center
-      margin: 20px -24px 50px
+      overflow: initial
       width: 100vw
+      max-width: none
       img
         margin: 0
+        height: 100%
+        width: 100%
 
 @media (max-width: $s)
   .not-found
+    .content
+      .page__title
+        font-size: 32px
+        line-height: 41.6px
+      p
+        font-size: 16px
+        line-height: 23px
     .not-found__image
       margin: 20px -18px 50px
 
 @media (max-width: $xs)
   .not-found
+    .content
+      .page__title
+        font-size: 26px
+        line-height: 33.8px
+      p
+        font-size: 16px
     .not-found__image
       margin: 20px -15px 50px

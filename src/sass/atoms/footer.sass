@@ -12,3 +12,21 @@ footer
   padding: 20px 0
   .link__base
     color: $c-textLightBlue
+  .footer__mail
+    padding: 0 20px
+
+@media (max-width: $m-min)
+  .footer
+    font-size: 14px
+    .footer__mail
+      max-width: 200px
+
+@media (max-width: $s-min)
+  .footer
+    flex-flow: column
+    align-items: flex-start
+    padding-bottom: 40px
+    .footer__mail
+      margin: 20px 0
+      padding: 0
+

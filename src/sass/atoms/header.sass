@@ -14,7 +14,9 @@ header
   align-items: center
   justify-content: space-between
   height: 100%
-
+  .header__right
+    display: flex
+    align-items: center
   .user
     display: flex
     align-items: center
@@ -26,4 +28,18 @@ header
       object-fit: cover
       object-position: center
       border-radius: 50%
+  .header__vk
+    display: flex
+    align-items: center
+    color: $c-textBlue
+    border-right: 1px solid $c-alternateBorder
+    margin-right: 30px
+    padding: 0 30px
+    height: 50px
+    svg
+      margin: 0 8px 1px 0
 
+@media (max-width: $m)
+  .header
+    .header__right
+      display: none

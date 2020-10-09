@@ -10,9 +10,16 @@
             </span>
           <span class="step">18-й поток</span>
         </div>
-        <div class="user">
-          <span class="user__name">Екатерина</span>
-          <img src="img/user-logo.png" alt="userpic" class="user__logo" />
+        <div class="header__right">
+          <span class="header__vk">
+
+            //= ../icons/icon-vk.html
+              <span>Перейти в тему</span>
+          </span>
+          <div class="user">
+            <span class="user__name">Екатерина</span>
+            <img src="img/user-logo.png" alt="userpic" class="user__logo" title="Екатерина" />
+          </div>
         </div>
       </div>
     </header>
@@ -24,7 +31,7 @@
           <p>То, что вы ищете не существует, или нами еще не изучено :)<br />Перейдите на <a href="/index.html" class="link__base">главную страницу</a>, и попробуйте найти нужную вам информацию там.</p>
           <a href="/index.html" class="link__next">
             Перейти на главную
-            //= ../atoms/icon-arrow-right.html
+            //= ../icons/icon-arrow-right.html
           </a>
         </div>
         <div class="not-found__image">
@@ -32,6 +39,20 @@
         </div>
       </div>
     </div>
-    //= ../atoms/footer.html
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <button class="back-to-top">
+            //= ../icons/icon-arrow.html
+          </button>
+          <span class="footer__mail">Все права защищены. По всем вопросам <a href="mailto:email@fiziki.com" class="link__base">email@fiziki.com</a></span>
+          <button class="button__transparent">
+            //= ../icons/icon-exit.html
+            Выйти
+          </button>
+        </div>
+      </div>
+    </footer>
+    <script src="../../js/app.js"></script>
   </body>
 </html>
